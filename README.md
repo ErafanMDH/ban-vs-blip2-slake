@@ -1,4 +1,4 @@
-# MedVQA Comparison: BAN vs. BLIP-2 (BioGPT)
+# From Classical VQA to Vision–Language Foundation Models: A Study on Medical VQA Using SLAKE
 
 This project performs a side-by-side comparison of **Discriminative** vs. **Generative** Artificial Intelligence for Medical Visual Question Answering (MedVQA).
 
