@@ -36,3 +36,29 @@ BAN-VS-BLIP2-SLAKE/
 │   └── utils.py          # Config dictionaries & seed setting
 ├── run_pipeline.py       # Main orchestrator (Run this!)
 └── requirements.txt      # Python dependencies
+
+# 📊 Evaluation Metrics
+
+The project generates a `results/model_comparison.csv` file and prints a report card evaluating 5 key metrics:
+
+* **Overall Accuracy:** Exact match accuracy across the entire validation set.
+* **Closed Accuracy:** Performance on "Yes/No" questions (Favoring BAN).
+* **Open Accuracy (BLEU-1):** Performance on descriptive questions (Favoring BLIP-2).
+* **Pathology Accuracy:** Ability to correctly identify diseases/abnormalities.
+* **Spatial Accuracy:** Ability to identify locations (Left, Right, Upper, Lower).
+
+---
+
+# 🛠️ Configuration
+
+Hyperparameters are managed in `src/utils.py`. The default configuration uses:
+
+* **BAN:** Batch size 64, LR 2e-5, 20 Epochs.
+* **BLIP-2:** Batch size 16, LR 2e-4 (LoRA), 40 Epochs, Rank 32.
+
+---
+
+# 📜 Credits
+
+* **Dataset:** SLAKE (BoKelvin)
+* **Base Models:** HuggingFace Transformers (BioGPT, Bio_ClinicalBERT, BiomedCLIP)
