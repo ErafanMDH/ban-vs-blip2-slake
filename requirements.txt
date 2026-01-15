@@ -1,0 +1,12 @@
+torch>=2.6
+torchvision
+transformers
+pandas
+scikit-learn
+pillow
+huggingface_hub
+datasets
+open_clip_torch
+peft
+sacremoses
+protobuf

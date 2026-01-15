@@ -1,0 +1,21 @@
+# --- System & Python ---
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+
+# --- Environments ---
+venv/
+env/
+.env
+
+# --- Data & Results ---
+# We ignore the raw data and the heavy model weights
+data/
+results/*.pth
+results/*.bin
+
+# Keep the comparison reports, but ignore temp files
+!results/model_comparison.csv
+!results/.gitkeep
