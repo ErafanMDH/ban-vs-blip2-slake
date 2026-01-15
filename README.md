@@ -55,7 +55,7 @@ The project generates a `results/model_comparison.csv` file and prints a report 
 Hyperparameters are managed in `src/utils.py`. The default configuration uses:
 
 * **BAN:** Batch size 64, LR 2e-5, 20 Epochs.
-* **BLIP-2:** Batch size 16, LR 2e-4 (LoRA), 40 Epochs, Rank 32.
+* **BLIP-2:** Batch size 16, LR 2e-5 (LoRA), 20 Epochs, Rank 32.
 
 ---
 
