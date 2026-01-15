@@ -36,6 +36,7 @@ BAN-VS-BLIP2-SLAKE/
 │   └── utils.py          # Config dictionaries & seed setting
 ├── run_pipeline.py       # Main orchestrator (Run this!)
 └── requirements.txt      # Python dependencies
+```
 
 # 📊 Evaluation Metrics
 
